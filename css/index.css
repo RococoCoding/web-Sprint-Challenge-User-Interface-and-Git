@@ -1,3 +1,4 @@
+/* #region reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,7 +47,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* #endregion */
 
+/* #region broad selectors */
 * {
     box-sizing: border-box;
 }
@@ -65,12 +68,33 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* #endregion */
 
-.container {
+/* #region nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+    align-items: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.jumbo {
+    margin: 3% 0;
+}
+
+.container, header {
     width: 800px;
     margin: 0 auto;
 }
 
+/* #endregion */
+
+/*#region index*/
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +136,47 @@ p {
     justify-content: center;
 }
 
+
+.middle-content .boxes .box:nth-child(1) {
+    background-color: teal;
+} 
+
+.middle-content .boxes  .box:nth-child(2) {
+    background-color:gold;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+    background-color:cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background-color:coral;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+    background-color:crimson;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background-color:forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+    background-color:darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background-color:hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10) {
+    background-color:dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,7 +190,53 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+/*#endregion*/
 
+/* #region about */
+.about-intro, .about-middle div {
+    border-bottom: 1px dashed black;
+   
+}
+
+.about-intro {
+     padding: 0 0 2% 2%;
+}
+
+.about-middle {
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-middle div {
+    width: 46%;
+    margin: 0 2% 7% 2%;
+    padding-bottom: 4%;
+}
+
+.about-middle h2 {
+    margin-top: 2%;
+}
+
+.about-middle a {
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 2% 4%;
+}
+
+.about-middle p {
+    margin-bottom: 7%;
+}
+
+.about-end {
+    margin-left: 2%;
+    margin-bottom: 4%;
+}
+/* #endregion */
+
+/* #region footer */
 footer {
     width: 100%;
     background: black;
@@ -144,3 +255,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* #endregion */
