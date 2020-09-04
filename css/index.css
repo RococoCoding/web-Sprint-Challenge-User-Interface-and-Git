@@ -1,3 +1,4 @@
+/* #region reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,7 +47,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* #endregion */
 
+/* #region broad selectors */
 * {
     box-sizing: border-box;
 }
@@ -65,7 +68,9 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* #endregion */
 
+/* #region nav */
 nav {
     display: flex;
     justify-content: space-between;
@@ -86,6 +91,8 @@ nav a {
     width: 800px;
     margin: 0 auto;
 }
+
+/* #endregion */
 
 /*#region index*/
 .top-content {
@@ -130,43 +137,43 @@ nav a {
 }
 
 
-.middle-content .boxes  .box1 {
+.middle-content .boxes .box:nth-child(1) {
     background-color: teal;
 } 
 
-.middle-content .boxes  .box2 {
+.middle-content .boxes  .box:nth-child(2) {
     background-color:gold;
 }
 
-.middle-content .boxes .box3 {
+.middle-content .boxes .box:nth-child(3) {
     background-color:cadetblue;
 }
 
-.middle-content .boxes .box4 {
+.middle-content .boxes .box:nth-child(4) {
     background-color:coral;
 }
 
-.middle-content .boxes .box5 {
+.middle-content .boxes .box:nth-child(5) {
     background-color:crimson;
 }
 
-.middle-content .boxes .box6 {
+.middle-content .boxes .box:nth-child(6) {
     background-color:forestgreen;
 }
 
-.middle-content .boxes .box7 {
+.middle-content .boxes .box:nth-child(7) {
     background-color:darkorchid;
 }
 
-.middle-content .boxes .box8 {
+.middle-content .boxes .box:nth-child(8) {
     background-color:hotpink;
 }
 
-.middle-content .boxes .box9 {
+.middle-content .boxes .box:nth-child(9) {
     background-color: indigo;
 }
 
-.middle-content .boxes .box10 {
+.middle-content .boxes .box:nth-child(10) {
     background-color:dodgerblue;
 }
 
@@ -185,7 +192,7 @@ nav a {
 }
 /*#endregion*/
 
-
+/* #region about */
 .about-intro, .about-middle div {
     border-bottom: 1px dashed black;
    
@@ -227,7 +234,9 @@ nav a {
     margin-left: 2%;
     margin-bottom: 4%;
 }
+/* #endregion */
 
+/* #region footer */
 footer {
     width: 100%;
     background: black;
@@ -246,3 +255,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* #endregion */
